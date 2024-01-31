@@ -13,7 +13,7 @@
 .home p {
     text-align: center;
     padding: 160px;
-    color: #53015d; /* Start with transparent color */
+    color: #333; /* Start with transparent color */
     font-size: 5vh;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     opacity: 0;
@@ -24,7 +24,7 @@
 .home a {
     position: relative; /* Ensure relative positioning for the anchor tag */
     z-index: 1; /* Ensure the anchor tag is above the overlay */
-    background-color: #53015d;
+    background-color: #333;
     color: white;
     padding:15px 30px;
     margin: 20px auto 40px auto; /* Center align the button */
@@ -39,7 +39,7 @@
 
 .home a:hover {
     background-color: white;
-    color: #53015d;
+    color: #333;
 }
 
 /* Keyframes for sliding in from top */
@@ -89,7 +89,7 @@
 
 .home a:hover {
     background-color: white;
-    color: #53015d;
+    color: #333;
 }
 
 .football-container {
@@ -134,5 +134,65 @@
     }
     100% {
         transform: translateY(-20px); /* Adjust bounce height */
+    }
+}
+/* Add media queries for responsiveness */
+@media screen and (max-width: 576px) {
+    .About {
+      height: auto; /* Set height to auto for smaller screens */
+      padding: 20px; /* Adjust padding for smaller screens */
+    }
+    
+    .About img {
+      width: 400px; 
+      height: 400px;/* Make the image responsive */
+      height: auto; /* Maintain aspect ratio */
+      float: none; /* Remove float for smaller screens */
+      margin: 0; /* Remove margin for smaller screens */
+      border-radius: 50px; /* Remove border radius for smaller screens */
+      border: none; /* Remove border for smaller screens */
+    }
+    
+  }
+  
+/* Add media queries for responsiveness */
+@media screen and (max-width: 768px) {
+    .football-container {
+        margin-bottom: 50px; /* Adjust margin for smaller screens */
+        margin-right: 10px; /* Adjust margin for smaller screens */
+    }
+    
+    .football-image {
+        width: 100px; /* Adjust width for smaller screens */
+        left: calc(50% - 50px); /* Adjust position for smaller screens */
+    }
+    
+    .home p {
+        padding: 20px; /* Adjust padding for smaller screens */
+        font-size: 3vh; /* Adjust font size for smaller screens */
+    }
+    
+    .home a {
+        margin: 10px auto 20px auto; /* Adjust margin for smaller screens */
+        padding: 10px 20px; /* Adjust padding for smaller screens */
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+    
+    .About {
+        height: 500px; /* Set height to auto for smaller screens */
+        padding: 40px; /* Adjust padding for smaller screens */
+    }
+    
+    .About img {
+        width: 100%; /* Make the image responsive */
+        height: auto; /* Maintain aspect ratio */
+        border-radius: 50%; /* Make the image circular */
+        margin: 0; /* Remove margin for smaller screens */
+        border: none; /* Remove border for smaller screens */
+    }
+    
+    .About p {
+        margin: 20px 0; /* Adjust margin for smaller screens */
+        font-size: 14px; /* Adjust font size for smaller screens */
     }
 }
