@@ -4,69 +4,10 @@
     text-decoration: none;
 }
 
-.header {
-    background-color: #53015d;
-    padding: 20px;
-    color: white;
-}
-
-.nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.nav-toggle {
-    cursor: pointer;
-}
-
-.fa-bars {
-    font-size: 24px;
-}
-
-.nav-menu {
-    list-style: none;
-    display: flex;
-}
-
-.nav-menu li {
-    margin-right: 20px;
-    position: relative; /* Relative positioning for dropdown */
-}
-
-.nav-menu li:last-child {
-    margin-right: 0;
-}
-
-.nav-menu a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.dropdown-menu {
-    display: none; /* Initially hide dropdown menu */
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #53015d;
-    width: 100%;
-    text-align: center;
-    padding: 10px 0;
-}
-
-.dropdown-menu li {
-    margin: 10px 0;
-}
-
-.nav-menu .dropdown:hover .dropdown-menu {
-    display: block; /* Show dropdown menu on hover */
-}
-
 /* Add CSS animation for the home section */
 .home {
     position: relative;
-    padding: 150px; /* Ensure relative positioning for the home section */
+    padding: 50px; /* Ensure relative positioning for the home section */
 }
 
 .home p {
@@ -89,6 +30,7 @@
     margin: 20px auto 40px auto; /* Center align the button */
     font-size: 18px;
     border: none;
+    font-weight: 1000;
     border-radius: 5px;
     cursor: pointer;
     display: block; /* Ensure button behaves as a block element */
@@ -148,15 +90,6 @@
 .home a:hover {
     background-color: white;
     color: #53015d;
-}
-
-.header img {
-    width: 40px;
-    height: 40px;
-    float: right;
-    border-radius: 50px;
-    background-color: #53015d;
-    margin: 10px ; /* Adjust margin to align with the navigation links */
 }
 
 .football-container {
