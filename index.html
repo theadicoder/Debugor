@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Website</title>
+<style>
+  *{
+    margin:0px;
+    padding:0px;
+    text-decoration:none;
+  }
+
+  .logo img{
+    width: 50px;
+    padding:20px;
+  }
+
+  /* Media queries */
+  @media only screen and (max-width: 600px) {
+    /* Adjustments for small screens */
+    header, nav, section, footer {
+      padding: 5px;
+    }
+  }
+</style>
+</head>
+<body>
+  <div class="logo">
+    <img src="./Assests/Logo.png" alt="logo">
+  </div>
+  <div class="nav">
+    <ul>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Languages</a>
+      <a href="#">Portfolio</a>
+      <a href="#">Blog</a>
+      <a href="#">Courses</a>
+      <a href="#">Contact</a>
+    </ul>
+  </div>
+</body>
+</html>
